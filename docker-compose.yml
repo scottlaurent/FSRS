@@ -1,0 +1,19 @@
+services:
+  fsrs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fsrs-app
+    working_dir: /var/www
+    volumes:
+      - .:/var/www
+    environment:
+      - APP_ENV=local
+      - APP_DEBUG=true
+    networks:
+      - fsrs-network
+    tty: true
+
+networks:
+  fsrs-network:
+    driver: bridge

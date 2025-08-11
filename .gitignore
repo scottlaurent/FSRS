@@ -1,0 +1,21 @@
+/vendor/
+node_modules/
+npm-debug.log
+yarn-error.log
+.env
+.phpunit.result.cache
+/logs/
+
+# PHPUnit
+/coverage/
+.phpunit.cache/
+
+# IDEs
+/.idea
+/.vscode
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
